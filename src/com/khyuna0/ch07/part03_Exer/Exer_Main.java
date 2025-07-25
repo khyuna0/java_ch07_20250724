@@ -52,7 +52,30 @@ public class Exer_Main {
 		
 		System.out.println("=================");
 		
-		// 5. 
+		// 5. Computer
+		
+		Laptop laptop = new Laptop();
+		Desktop desktop = new Desktop();
+		
+		laptop.turnOn();
+		laptop.turnOff();
+		
+		desktop.turnOn();
+		desktop.turnOff();
+		
+		System.out.println("=================");
+		
+		// 6. Person
+		
+		// 6-1 Person 클래스의 실체 클래스에서 super() 키워드로 Person 클래스의 매개변수를 초기화하면 사용할 수 있게 됩니다.
+		// 실체 클래스 생성 -> super() 사용, 생성자 호출 후 초기화 -> 자식 객체(인스턴스?) 생성 -> 부모 타입으로 업캐스팅
+		// static 메소드는 객체 생성 하지 않고 클래스명.메소드명으로 호출
+		
+		Student student = new Student("이름");
+		Person person = new Student("이름"); // 같은 인스턴스 참조?
+		
+		student.sayHello();
+		Person.printHi();
 		
 	}
 
