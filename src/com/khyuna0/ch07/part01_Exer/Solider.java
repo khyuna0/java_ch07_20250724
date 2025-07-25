@@ -4,4 +4,8 @@ public class Solider extends Person {
 	
 	String location;
 	
+	public void print(String location) {
+		System.out.println(this.location);
+	}
+	
 }
