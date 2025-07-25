@@ -21,6 +21,10 @@ public class TireMain {
 		kum = (KumhoTire) tire2; // 강제 형변환 -> down casting / 자식에 부모가 들어감
 		
 		// han.tireName = "스노우 타이어"; 
+		
+		// 2층은 Tire 클래스로 만든 객체만 접근가능
+		// kumho 1층에만 접근가능함
+		// 강제 형변환을 시켜주면 1, 2층 모두 접근 가능하게 됨
 	}
 
 }
