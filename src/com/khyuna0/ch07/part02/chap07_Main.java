@@ -39,6 +39,11 @@ public class chap07_Main {
 		mycar.frontTire = new KumhoTire(); // 객체 타입 
 		mycar.rearTire = new HankookTire(); // 값 변경 할 때 객체만 바꿔주면 됨 
 		
+		HankookTire han = new HankookTire();
+		KumhoTire kum = new KumhoTire();
+		
+		mycar.tirePrint(han);
+		
 		
 	}
 
